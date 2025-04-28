@@ -4,14 +4,14 @@ import aboutImg from "../../assets/aboutImg.png"
 const AboutUs = () => {
   return (
     <div className="w-full h-full bg-gradient-to-r from-[#F5FFF2] to-[#E5FFE9] py-20">
-      <h1 class="bg-gradient-to-r from-[#E5FFE9] to-[#F5FFF2] bg-clip-text text-3xl md:text-5xl  font-bold  text-center mb-4">
-          About  ArchiAxis
-          </h1>
+      
       <div className="aboutContainer wrapper px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-12">
         {/* text-content  */}
 
         <div className="w-full md:w-1/2">
-          
+        <h1 class="bg-gradient-to-r from-[#003917] to-[#4DC16F] bg-clip-text text-3xl md:text-5xl text-transparent  font-bold   mb-4">
+          About  ArchiAxis
+          </h1>
 
           <p className="text-justify text-[#000000]"><span className="font-bold">ArchiAxis</span> is an architectural consultancy dedicated to creating meaningful spaces that seamlessly integrate context, climate, and culture. We believe that architecture is not just about designing structures but about shaping experiences that resonate with people and their surroundings. Our approach is rooted in a deep understanding of spatial dynamics, materiality, and functionality, ensuring that each project responds thoughtfully to its environment.
           <br /><br /> 
@@ -32,7 +32,7 @@ const AboutUs = () => {
         </div>
         {/* image-content  */}
         <div className="w-full md:w-1/2">
-          <img src={aboutImg} alt="" />
+          <img src={aboutImg} alt="tow house picture" />
         </div>
       </div>
     </div>
