@@ -1,11 +1,42 @@
-import React from 'react'
+import React from "react";
+import aboutImg from "../../assets/aboutImg.png"
 
 const AboutUs = () => {
   return (
-    <div>
-      <h1>About Us Section</h1>
-    </div>
-  )
-}
+    <div className="w-full h-full bg-gradient-to-r from-[#F5FFF2] to-[#E5FFE9] py-20">
+      <h1 class="bg-gradient-to-r from-[#E5FFE9] to-[#F5FFF2] bg-clip-text text-3xl md:text-5xl  font-bold  text-center mb-4">
+          About  ArchiAxis
+          </h1>
+      <div className="aboutContainer wrapper px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-12">
+        {/* text-content  */}
 
-export default AboutUs
+        <div className="w-full md:w-1/2">
+          
+
+          <p className="text-justify text-[#000000]"><span className="font-bold">ArchiAxis</span> is an architectural consultancy dedicated to creating meaningful spaces that seamlessly integrate context, climate, and culture. We believe that architecture is not just about designing structures but about shaping experiences that resonate with people and their surroundings. Our approach is rooted in a deep understanding of spatial dynamics, materiality, and functionality, ensuring that each project responds thoughtfully to its environment.
+          <br /><br /> 
+          
+          In a rapidly transforming urban and rural landscape, we strive to balance modern architectural innovations with the timeless essence of regional traditions. Our designs are informed by the rich cultural heritage of Bangladesh while embracing contemporary technologies and methodologies. Every project is an opportunity to bridge the past and the future, creating spaces that feel both authentic and forward-thinking.  <br /><br />
+
+          At <span className="font-bold">ArchiAxis</span>, we see design as an evolving process—an ongoing dialogue between site, space, and society. We listen to the land, study its nuances, and respond with solutions that enhance both aesthetics and usability. Our projects are shaped by rigorous exploration, hands-on experimentation, and a commitment to sustainability. By working closely with craftsmen, engineers, and stakeholders, we ensure that our designs are not just visually compelling but also practical,<br />
+          efficient, and deeply contextual.  <br /><br />
+          From residential and commercial spaces to interiors and urban interventions, <span className="font-bold">ArchiAxis</span> is dedicated to reimagining architecture in a way that is innovative yet respectful of its roots. We believe that every site has a story to tell, and through our work, we strive to translate that narrative into built form—creating spaces that inspire, endure, and evolve with time. <br /><br />
+
+          Our philosophy is guided by a commitment to craftsmanship, sustainability, and the evolving needs of modern life. We embrace imperfections as opportunities for creative expression, exploring the balance between tradition and transformation. By adapting to the challenges of material availability, construction practices, and changing urban dynamics, we craft spaces that are not only aesthetically engaging but also contextually intelligent. <br /><br />
+
+
+          <span className="font-bold">ArchiAxis</span> envisions architecture as a continuous journey of learning and adaptation. We challenge conventions, embrace the complexities of design, and seek to create environments that enrich lives. Our work is a testament to our belief that architecture should be as dynamic and diverse as the people it serves, evolving with time while staying rooted in its essence
+            
+          </p> 
+
+        </div>
+        {/* image-content  */}
+        <div className="w-full md:w-1/2">
+          <img src={aboutImg} alt="" />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AboutUs;
