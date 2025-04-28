@@ -49,7 +49,7 @@ const Projects = () => {
       </div>
 
       <div className="imgContainer grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 wrapper mt-12">
-        <div className="flex flex-col gap-y-1 group relative p-2">
+        <div className="flex flex-col gap-y-1 group relative p-2 border border-black/40 rounded-md">
           <img className="rounded-2xl" src={img1} alt="" />
           <div className="mt-3 flex justify-between items-center">
             <div>
@@ -62,7 +62,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-y-1 group relative p-2">
+        <div className="flex flex-col gap-y-1 group relative p-2  border border-black/40 rounded-md">
           <img className="rounded-2xl" src={img2} alt="" />
           <div className="mt-3 flex justify-between items-center">
             <div>
@@ -75,7 +75,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-y-1 group relative p-2">
+        <div className="flex flex-col gap-y-1 group relative p-2 border border-black/40 rounded-md">
           <img className="rounded-2xl" src={img3} alt="" />
           <div className="mt-3 flex justify-between items-center">
             <div>
@@ -88,7 +88,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-y-1 group relative p-2">
+        <div className="flex flex-col gap-y-1 group relative p-2 border border-black/40 rounded-md">
           <img className="rounded-2xl" src={img4} alt="" />
           <div className=" mt-3 flex justify-between items-center">
             <div>
@@ -101,7 +101,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-y-1 group relative p-2">
+        <div className="flex flex-col gap-y-1 group relative p-2 border border-black/40 rounded-md">
           <img className="rounded-2xl" src={img5} alt="" />
           <div className="mt-3 flex justify-between items-center">
             <div>
@@ -114,7 +114,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-y-1 group relative p-2">
+        <div className="flex flex-col gap-y-1 group relative p-2 border border-black/40 rounded-md">
           <img className="rounded-2xl" src={img6} alt="" />
           <div className="mt-3 flex justify-between items-center">
             <div>
