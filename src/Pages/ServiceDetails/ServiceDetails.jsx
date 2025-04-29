@@ -1,7 +1,7 @@
 import React from "react";
 import { projectData } from "../../data/servicesData/servicesData";
 import { useParams } from "react-router";
-import bgImage from '../../assets/bg.png'
+import bgImage from "../../assets/bg.png";
 
 const ServiceDetails = () => {
   const { id } = useParams();
@@ -60,9 +60,9 @@ const ServiceDetails = () => {
           </div>
         </div>
         <div
-                className="absolute -bottom-23 left-4 w-[400px] h-[250px] bg-no-repeat bg-contain bg-left z-0 pointer-events-none"
-                style={{ backgroundImage: `url(${bgImage})` }}
-              ></div>
+          className="absolute -bottom-23 left-4 w-[400px] h-[250px] bg-no-repeat bg-contain bg-left z-0 pointer-events-none"
+          style={{ backgroundImage: `url(${bgImage})` }}
+        ></div>
       </div>
     </div>
   );
