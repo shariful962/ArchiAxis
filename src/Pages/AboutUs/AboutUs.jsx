@@ -1,9 +1,10 @@
 import React from "react";
 import aboutImg from "../../assets/aboutImg.png"
+import bgImage from "../../assets/bg.png"
 
 const AboutUs = () => {
   return (
-    <div className="w-full h-full bg-gradient-to-r from-[#F5FFF2] to-[#E5FFE9] py-20">
+    <div className="w-full h-full bg-gradient-to-r from-[#F5FFF2] to-[#E5FFE9] py-20 relative">
       
       <div className="aboutContainer wrapper px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-12">
         {/* text-content  */}
@@ -35,6 +36,10 @@ const AboutUs = () => {
           <img src={aboutImg} alt="tow house picture" />
         </div>
       </div>
+      <div
+              className="absolute bottom-0 left-2 w-[500px] h-[250px] bg-no-repeat bg-cover bg-left z-0 pointer-events-none"
+              style={{ backgroundImage: `url(${bgImage})` }}
+            ></div>
     </div>
   );
 };
