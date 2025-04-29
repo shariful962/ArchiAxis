@@ -62,7 +62,7 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="mt-14 flex flex-col md:flex-row justify-between">
-            <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <form className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
               {/* Name */}
               <div className="flex flex-col">
                 <label
