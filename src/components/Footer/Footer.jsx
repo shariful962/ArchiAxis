@@ -4,13 +4,14 @@ import { FiPhoneCall } from "react-icons/fi";
 import { BiMessageDetail } from "react-icons/bi";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaFacebookF, FaXTwitter, FaInstagram } from "react-icons/fa6";
-
 import { Link } from "react-router";
+import bgRIght from '../../assets/footer-right.png'
+import bgLeft from '../../assets/footer-left.png'
 
 const Footer = () => {
   return (
     <div>
-      <footer className="bg-main  w-full font-Inter py-10">
+      <footer className="bg-main  w-full font-Inter py-10 relative z-20">
         <div className="footerContainer wrapper px-4 sm:px-6">
           {/* footer top  */}
           <div className="flex flex-col md:flex-row gap-8  justify-between">
@@ -85,12 +86,15 @@ const Footer = () => {
             </div>
           </div>
           {/* footer-bottom  */}
-          <div className="h-[1px] w-[90%] md:w-2/3 mx-auto bg-[#66A857] my-12"></div>
+          <div className="h-[1px] w-[90%] md:w-2/3 mx-auto bg-[#66A85780] my-12"></div>
           <div>
           <p className="text-base leading-[.5px] text-white text-center">ArchiAxis &copy; {new Date().getFullYear()} All rights reserved</p>
           </div>
           
         </div>
+        <div className="absolute bottom-0 right-0 w-full h-full bg-no-repeat bg-contain bg-right z-0 pointer-events-none" style={{ backgroundImage: `url(${bgRIght})` }}></div> 
+        <div className="absolute bottom-0 left-0 w-[350px] h-full bg-no-repeat bg-cover bg-left z-0 pointer-events-none" style={{ backgroundImage: `url(${bgLeft})` }}></div> 
+
       </footer>
     </div>
   );

@@ -6,6 +6,8 @@ import AboutUs from '../Pages/AboutUs/AboutUs';
 import Projects from '../Pages/Projects/Projects';
 import Services from '../Pages/Services/Services';
 import ContactUs from '../Pages/ContactUs/ContactUs';
+import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
+
 
 
 export const router = createBrowserRouter([
@@ -35,7 +37,13 @@ export const router = createBrowserRouter([
             path: "/contact",
             Component: ContactUs
 
+        },
+        {
+            path: '/service/:id',
+            Component: ServiceDetails
+
         }
+        
     ]
   },
 ]);

@@ -129,6 +129,8 @@ const Projects = () => {
             </div>
           </div>
         </div>
+
+        
       </div>
 
       <div className=" mt-12 flex justify-center items-center">

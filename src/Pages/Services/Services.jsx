@@ -76,10 +76,12 @@
 
 import React from "react";
 import { projectData } from "../../data/servicesData/servicesData";
+import bgImg from "../../assets/bg.png"
+import { Link } from "react-router";
 
 const Services = () => {
   return (
-    <div className="w-full h-full bg-gradient-to-r from-[#F5FFF2] to-[#E5FFE9] py-20">
+    <div className="w-full h-full bg-gradient-to-r from-[#F5FFF2] to-[#E5FFE9] py-20 relative">
       <div className="servicesContainer wrapper px-4 sm:px-6">
         
         <h1 className="bg-gradient-to-r from-[#003917] to-[#4DC16F] bg-clip-text text-3xl md:text-5xl text-transparent font-bold mb-4">
@@ -94,29 +96,36 @@ const Services = () => {
         <div className="mt-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projectData.map((service) => (
-              <div key={service.id} className="flex flex-col items-center group overflow-hidden rounded-lg shadow-lg">
+              <div key={service.id} className="flex flex-col items-center group overflow-hidden rounded-lg ">
                 
                 {/* Image box */}
-                <div className="relative w-full h-full">
-                  <img src={service.img} alt={service.title} className="w-full h-full object-cover" />
+                <div className="relative w-full h-full z-10">
+                  <img src={service.img} alt={service.title} className="w-full h-full object-cover rounded-md" />
                   
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-white/55 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-white/60 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
                     {/* Button */}
-                    <button className="px-5 py-2 bg-transparent text-black rounded-full font-semibold border border-main hover:bg-main hover:text-white transition-all duration-300">
+                    <Link to={`/service/${service.id}`}>
+                    <button className="cursor-pointer px-7 py-3 bg-transparent text-main rounded-full font-semibold border border-main hover:bg-gradient-to-r from-[#003917] to-[#4DC16F] hover:text-white hover:border-none transition-all duration-300">
                       Text Here
                     </button>
+                    </Link>
                   </div>
                 </div>
 
                 {/* Title */}
-                <h2 className="mt-4 text-xl font-semibold text-center">{service.title}</h2>
+                <h2 className="mt-4 text-main text-xl font-semibold text-center">{service.title}</h2>
               </div>
             ))}
           </div>
         </div>
 
       </div>
+      <div
+              className="absolute bottom-0 right-2 w-[500px] h-[250px] bg-no-repeat bg-cover bg-left z-0 pointer-events-none"
+              style={{ backgroundImage: `url(${bgImg})` }}
+            ></div>
+
     </div>
   );
 };
